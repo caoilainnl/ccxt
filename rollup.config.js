@@ -13,6 +13,7 @@ export default [
         format: "cjs",
       }
     ],
+    context: 'this', 
     plugins: [
       nodeResolve({
         preferBuiltins: true,
