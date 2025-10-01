@@ -294,4 +294,12 @@ type IDerivedExchange interface {
 	ParseConversion(conversion interface{}, optionalArgs ...interface{}) interface{}
 	SafeCurrencyCode(currencyId interface{}, optionalArgs ...interface{}) interface{}
 	HandleErrors(statusCode interface{}, statusText interface{}, url interface{}, method interface{}, responseHeaders interface{}, responseBody interface{}, response interface{}, requestHeaders interface{}, requestBody interface{}) interface{}
+	CancelOrderWs(id interface{}, optionalArgs ...interface{}) <-chan interface{}
+	CreateOrderWs(symbol interface{}, typeVar interface{}, side interface{}, amount interface{}, optionalArgs ...interface{}) <-chan interface{}
+	WatchPositions(optionalArgs ...interface{}) <-chan interface{}
+	FetchTickersWs(optionalArgs ...interface{}) <-chan interface{}
+	WatchLiquidationsForSymbols(symbols interface{}, optionalArgs ...interface{}) <-chan interface{}
+	WatchMyLiquidationsForSymbols(symbols interface{}, optionalArgs ...interface{}) <-chan interface{}
+	FetchOrdersWs(optionalArgs ...interface{}) <-chan interface{}
+	ParseWsTrade(trade interface{}, optionalArgs ...interface{}) interface{}
 }
