@@ -1,6 +1,6 @@
 module github.com/ccxt/ccxt/go/v4/pro
 
-go 1.24.4
+go 1.25.5
 
 require github.com/ccxt/ccxt/go/v4 v4.0.0
 
